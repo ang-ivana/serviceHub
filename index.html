@@ -1,38 +1,223 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>serviceHub</title>
-    <link rel="icon" href="img/flaticon.ico" />
-  </head>
 
-  <body>
-    <header>
-      <a href="index.html">
-        <img src="img/logo.svg" alt="logo" />
-      </a>
-      <nav>
-        <a href="#">categories</a>
-        <a href="#">about</a>
-        <a href="javascript:;">contact</a>
-        <button aria-label="login">log in</button>
-        <button aria-label="signup">sign up</button>
-      </nav>
-      <div>
-        <button aria-label="languages">
-          <img src="img/global.svg" alt="languages" />
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>serviceHub</title>
+  <link rel="icon" href="img/flaticon.ico" />
+</head>
 
-        <div>
-          <span>Macedonian</span>
-          <span>English</span>
-          <span>Turkish</span>
-          <span>Albanian</span>
+<body>
+  <header>
+    <a href="index.html" id="logo">
+      <img src="img/logo.svg" alt="logo" />
+    </a>
+    <nav>
+      <a href="#">categories</a>
+      <a href="#">about</a>
+      <a href="javascript:;">contact</a>
+      <button aria-label="login" class="btn primary-btn primary-navy">log in</button>
+      <button aria-label="signup" class="btn secondary-btn">sign up</button>
+    </nav>
+    <div class="languages-container">
+      <button aria-label="languages" id="languagesBtn">
+        <img src="img/global.svg" alt="languages" />
+      </button>
+
+      <div class="languages-dropdown">
+        <span>Macedonian</span>
+        <span>English</span>
+        <span>Turkish</span>
+        <span>Albanian</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="heroShot">
+      <div class="hero-info">
+        <img src="img/hero-text.svg" alt="hero text">
+        <span>whether you're looking for help or offering it, everything starts here.</span>
+        <button aria-label="book now" class="btn primary-btn">book now</button>
+      </div>
+      <div class="hero-img">
+        <img src="img/hero-img.png" alt="hero img">
+      </div>
+    </section>
+    <section id="motsBooked">
+      <h2>most booked</h2>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-item">
+            <div class="carousel-item-img">
+              <img src="img/carousel-1.png" alt="service image">
+            </div>
+            <div class="carousel-item-info">
+              <h3>Spotless Power</h3>
+              <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+                magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+                congue facilisi rhoncus integer.</span>
+              <button aria-label="book now" class="btn primary-btn">book now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-item-img">
+              <img src="img/carousel-2.png" alt="service image">
+            </div>
+            <div class="carousel-item-info">
+              <h3>George Mechanic</h3>
+              <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+                magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+                congue facilisi rhoncus integer.</span>
+              <button aria-label="book now" class="btn primary-btn">book now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-item-img">
+              <img src="img/carousel-3.png" alt="service image">
+            </div>
+            <div class="carousel-item-info">
+              <h3>GoodFood Catering</h3>
+              <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+                magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+                congue facilisi rhoncus integer.</span>
+              <button aria-label="book now" class="btn primary-btn">book now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-item-img">
+              <img src="img/carousel-4.png" alt="service image">
+            </div>
+            <div class="carousel-item-info">
+              <h3>Klime Shvajcer</h3>
+              <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+                magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+                congue facilisi rhoncus integer.</span>
+              <button aria-label="book now" class="btn primary-btn">book now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-item-img">
+              <img src="img/carousel-5.png" alt="service image">
+            </div>
+            <div class="carousel-item-info">
+              <h3>Poinakva Hair Studio</h3>
+              <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+                magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+                congue facilisi rhoncus integer.</span>
+              <button aria-label="book now" class="btn primary-btn">book now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-item-img">
+              <img src="img/carousel-6.png" alt="service image">
+            </div>
+            <div class="carousel-item-info">
+              <h3>KlikniJadi Food Delivery</h3>
+              <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+                magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+                congue facilisi rhoncus integer.</span>
+              <button aria-label="book now" class="btn primary-btn">book now</button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
       </div>
-    </header>
-    <main></main>
-    <footer></footer>
-  </body>
+    </section>
+    <section id="searchResaults">
+      <div class="search-top">
+        <form>
+          <input type="search" name="search" id="search">
+        </form>
+        <div class="categories-container"></div>
+        <div class="filters-container"></div>
+      </div>
+      <h2>Search results</h2>
+      <div class="search-resaults">
+        <div class="search-item">
+          <div class="search-img">
+            <img src="img/search-1.png" alt="search img">
+          </div>
+          <div class="search-info">
+            <h3 class="search-title">Hrizantema Flower Arrangements</h3>
+            <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+              magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+              congue facilisi rhoncus integer.</span>
+            <button aria-label="book now" class="btn primary-btn">book now</button>
+          </div>
+        </div>
+        <div class="search-item">
+          <div class="search-img">
+            <img src="img/search-2.png" alt="search img">
+          </div>
+          <div class="search-info">
+            <h3 class="search-title">ASN Grading</h3>
+            <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+              magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+              congue facilisi rhoncus integer.</span>
+            <button aria-label="book now" class="btn primary-btn">book now</button>
+          </div>
+        </div>
+        <div class="search-item">
+          <div class="search-img">
+            <img src="img/search-3.png" alt="search img">
+          </div>
+          <div class="search-info">
+            <h3 class="search-title">Stefanovski Cleaning Services</h3>
+            <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+              magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+              congue facilisi rhoncus integer.</span>
+            <button aria-label="book now" class="btn primary-btn">book now</button>
+          </div>
+        </div>
+        <div class="search-item">
+          <div class="search-img">
+            <img src="img/search-4.png" alt="search img">
+          </div>
+          <div class="search-info">
+            <h3 class="search-title">GetNailed</h3>
+            <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+              magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+              congue facilisi rhoncus integer.</span>
+            <button aria-label="book now" class="btn primary-btn">book now</button>
+          </div>
+        </div>
+        <div class="search-item">
+          <div class="search-img">
+            <img src="img/search-5.png" alt="search img">
+          </div>
+          <div class="search-info">
+            <h3 class="search-title">TAN Roofing</h3>
+            <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+              magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+              congue facilisi rhoncus integer.</span>
+            <button aria-label="book now" class="btn primary-btn">book now</button>
+          </div>
+        </div>
+        <div class="search-item">
+          <div class="search-img">
+            <img src="img/search-6.png" alt="search img">
+          </div>
+          <div class="search-info">
+            <h3 class="search-title">Sv.Sofija Retirement Home</h3>
+            <span>Lorem ipsum dolor sit amet consectetur. Viverra eleifend vel luctus tristique aliquet diam aliquam
+              magna vestibulum. Enim diam cursus auctor posuere id aliquam justo. At pretium at pretium rutrum elit
+              congue facilisi rhoncus integer.</span>
+            <button aria-label="book now" class="btn primary-btn">book now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="newsletter"></section>
+  </main>
+  <footer></footer>
+</body>
+
 </html>
