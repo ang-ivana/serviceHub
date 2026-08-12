@@ -134,9 +134,62 @@
     <section id="searchResaults">
       <div class="search-top">
         <form>
-          <input type="search" name="search" id="search">
+          <input type="search" name="search" id="search" placeholder="find your city...">
+          <button aria-label="categories" class="btn primary-btn primary-navy categories-btn">categories</button>
+          <button aria-label="filters" class="btn primary-btn primary-navy filters-btn">filters</button>
         </form>
-        <div class="categories-container"></div>
+        <div class="categories-container">
+          <div class="categories">
+            <span class="categories-item">
+              Home Services
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Outdoor & Property
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Moving & Transport
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Personal Care & Beauty
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Health & Wellness
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Education & Lessons
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Events & Entertainment
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Business Services
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Technology Services
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Automotive
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Pet Services
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+            <span class="categories-item">
+              Specialized Services
+              <img src="img/arrow-right.svg" alt="arrow">
+            </span>
+          </div>
+        </div>
         <div class="filters-container"></div>
       </div>
       <h2>Search results</h2>
@@ -215,9 +268,57 @@
         </div>
       </div>
     </section>
-    <section id="newsletter"></section>
+    <section id="newsletter">
+      <div class="newsletter-info">
+        <img src="img/newsletter-text.svg" alt="newsletter text">
+        <p>Receive recommendations, promotions from nearby service providers, and useful tips to make booking local
+          services easier than ever.</p>
+        <form class="newsletter-form">
+          <input type="email" id="newsletterEmail" name="email" placeholder="write your email..." required>
+          <button class="btn primary-btn" aria-label="subscribe" type="submit">subscribe</button>
+        </form>
+      </div>
+      <div class="newsletter-img">
+        <img src="img/newsletter-img.png" alt="newsletter img">
+      </div>
+    </section>
   </main>
-  <footer></footer>
+  <footer>
+    <div class="footer-links">
+      <div class="footer-links-item">
+        <h3>most booked categories</h3>
+        <div class="footer-links-container">
+          <a href="#">Outdoor & Property</a>
+          <a href="#">Events & Entertainment</a>
+          <a href="#">Pet Services</a>
+          <a href="#">Education & Lessons</a>
+        </div>
+      </div>
+      <div class="footer-links-item">
+        <h3>the company</h3>
+        <div class="footer-links-container">
+          <a href="#">about</a>
+          <a href="#">cookie policy</a>
+          <a href="#">privacy policy</a>
+          <a href="#">faqs</a>
+        </div>
+      </div>
+      <div class="footer-links-item">
+        <h3>socials</h3>
+        <div class="footer-links">
+          <a href="#">instagram</a>
+          <a href="#">linkedin</a>
+          <a href="#">tiktok</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-rights">
+      <p>© all rights reserved
+        <img src="img/logo.svg" alt="logo">
+        <span id="year">2026</span>
+      </p>
+    </div>
+  </footer>
 </body>
 
 </html>
