@@ -1,0 +1,44 @@
+header {
+  margin: 0 60px;
+  padding: 15px 0;
+}
+
+.btn {
+  padding: 5px 15px;
+  font-weight: 700;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.primary-navy {
+  background-color: #003640 !important;
+}
+
+.primary-navy:hover {
+  background-color: #F2572B !important;
+  color: #E4EEF0 !important;
+}
+
+.primary-btn {
+  background-color: #F2572B;
+  color: #E4EEF0;
+}
+
+.primary-btn:hover {
+  border-color: #F2572B;
+  background-color: transparent;
+  color: #F2572B;
+}
+
+.secondary-btn {
+  border-color: #003640;
+  color: #003640;
+  background-color: transparent;
+}
+
+.secondary-btn:hover {
+  background-color: #003640;
+  color: #E4EEF0;
+}
