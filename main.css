@@ -4,6 +4,49 @@ header {
   position: fixed;
   background-color: #E4EEF0;
   width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: calc(100vw - 120px);
+}
+
+nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  align-items: center;
+}
+
+.languages-container {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.languages-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #003640;
+  padding: 15px 0;
+  border-radius: 5px;
+  display: none;
+}
+
+.languages-dropdown span {
+  cursor: pointer;
+  color: #E4EEF0;
+  text-transform: capitalize;
+  padding: 5px 15px;
+}
+
+.languages-dropdown span:hover {
+  background-color: #E4EEF0;
+  color: #003640;
 }
 
 h2 {
@@ -55,13 +98,20 @@ h3 {
 }
 
 #heroShot {
-  padding-top: 173px;
+  padding-top: 83px;
   height: 70dvh;
   display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .hero-info {
-  width: 50%;
+  width: calc(50% - 60px);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+  padding-left: 60px;
 }
 
 .hero-info span {
@@ -80,9 +130,46 @@ h3 {
   margin: 30px 60px;
 }
 
+.carousel-container {
+  overflow-x: hidden;
+}
+
 .carousel-item {
   background-color: #003640;
   width: calc(100vw - 120px);
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  padding-left: 0;
+}
+
+.carousel-item-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.carousel-item-img {
+  width: calc(50% - 30px);
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-item-img img {
+  height: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 30px;
 }
 
 .carousel-item h3,
@@ -92,6 +179,10 @@ h3 {
 
 .carousel-dots {
   margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .carousel-dots .dot {
@@ -104,4 +195,31 @@ h3 {
 
 .carousel-dots .active {
   background-color: #003640;
+}
+
+#searchResaults {
+  padding: 30px 60px;
+}
+
+.search-top form {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#search {
+  border: 2px solid #003640;
+  border-radius: 5px;
+  padding: 5px 10px;
+  width: 350px;
+  color: #003640;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+#search::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  color: #00152480;
 }
